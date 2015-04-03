@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{E2C26B4F-A56F-4DF7-8A5A-20ED7741BD05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessData", "GuessData\GuessData.csproj", "{B8F51A47-5689-4451-9027-36A5F092AC5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2C26B4F-A56F-4DF7-8A5A-20ED7741BD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C26B4F-A56F-4DF7-8A5A-20ED7741BD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C26B4F-A56F-4DF7-8A5A-20ED7741BD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C26B4F-A56F-4DF7-8A5A-20ED7741BD05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F51A47-5689-4451-9027-36A5F092AC5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F51A47-5689-4451-9027-36A5F092AC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F51A47-5689-4451-9027-36A5F092AC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F51A47-5689-4451-9027-36A5F092AC5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

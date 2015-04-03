@@ -1,0 +1,15 @@
+﻿@{
+    string s = GuessData.DialogConstant.NAME_DEFAULT;
+    using (var db = new GuessData.GuessEntities())
+    {
+        int rand = new Random().Next(db.People.Count());
+        s = db.People.Where(x => x.Id == rand).Select(x => x.Name).First() ?? GuessData.DialogConstant.NAME_DEFAULT;
+    }
+    
+    ViewBag.Title = "Guess";
+}
+
+is it <h2>@s ?</h2>
+
+<input id="yes" type="button" value="Create" onclick="location.href='@Url.Action("NoSurprise", "Home")'" />
+<input id="no" type="button" value="Create" onclick="location.href='@Url.Action("NoFoolYourself", "Home")'" />
