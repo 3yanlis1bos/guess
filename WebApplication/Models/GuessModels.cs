@@ -12,7 +12,7 @@ namespace WebApplication.Models
 {
     public class GuessModel 
     {
-        People person;
-        Statistics statistic;
+        public People Person { get; set; }
+        public bool Decision { get; set; }
     }
 }

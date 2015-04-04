@@ -1,15 +1,10 @@
-﻿@{
-    string s = GuessData.DialogConstant.NAME_DEFAULT;
-    using (var db = new GuessData.GuessEntities())
-    {
-        int rand = new Random().Next(db.People.Count());
-        s = db.People.Where(x => x.Id == rand).Select(x => x.Name).First() ?? GuessData.DialogConstant.NAME_DEFAULT;
-    }
-    
-    ViewBag.Title = "Guess";
-}
+﻿@model WebApplication.Models.GuessModel
 
-is it <h2>@s ?</h2>
 
-<input id="yes" type="button" value="Create" onclick="location.href='@Url.Action("NoSurprise", "Home")'" />
-<input id="no" type="button" value="Create" onclick="location.href='@Url.Action("NoFoolYourself", "Home")'" />
+is it <h2>@Html.DisplayTextFor(s => s.Person.Name) ?</h2>
+
+
+@Html.RadioButtonFor(model => model.Decision, true) Yes
+@Html.RadioButtonFor(model => model.Decision, false) No
+
+<input id="yes" type="submit" value="Find out." onclick="location.href='@Url.Action("Guess", "Home")'" />
